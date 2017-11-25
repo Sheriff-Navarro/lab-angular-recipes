@@ -1,0 +1,10 @@
+<h1> Phone list </h1>
+    <div>
+      <div *ngFor="let dish of dishes">
+        <img [src]="dish.image" />
+        <h3> {{ dish.name }} </h3>
+        <a [routerLink]="['dish', dish._id]"> View Details </a>
+
+        <!-- <p> {{ dish.description }} </p> -->
+      </div>
+    </div>
